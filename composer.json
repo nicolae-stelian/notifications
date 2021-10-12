@@ -1,0 +1,17 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Notification\\": "src/",
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin/"
+  },
+  "require-dev": {
+    "behat/behat": "^3.7",
+    "phpunit/phpunit": "^7.5",
+    "behat/mink-extension": "^2.3",
+    "mockery/mockery": "^1.3"
+  }
+}
