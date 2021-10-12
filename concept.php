@@ -13,6 +13,7 @@ $alertingService = new AlertingService($pagerService);
 $apacheService = new MonitoredService("apache", $alertingService);
 $mysqlService = new MonitoredService("mysql", $alertingService);
 $pagerService->addMonitoredService($apacheService);
+$pagerService->addMonitoredService($mysqlService);
 
 $execCount = 0;
 while ($execCount++ < 100) {
